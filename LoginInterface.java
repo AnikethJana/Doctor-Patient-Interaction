@@ -19,12 +19,11 @@ class LoginInterface
                 System.out.println("Try Your Password Again");
                 Pass = sc.nextLine();
             }
-            System.out.println("Password accepted Entering..."); 
-            PatientInfo d = new PatientInfo();
-           //ERROR#################################################
-            Map<String, String> pd = d.patientDetails();
+            System.out.println("Welcome Doctor"); 
+           
+            Map<String,String> hs = PatientInfo.hs;
             DoctorInfo c = new DoctorInfo();
-            c.doctorInfo(pd);
+            c.doctorInfo(hs);
             
         } 
         //login interface for Patient
@@ -35,9 +34,7 @@ class LoginInterface
                 Pass = sc.nextLine();
             }
             System.out.println("Password accepted P.");
-
-            PatientInfo b = new PatientInfo();
-            b.patientDetails();
+            PatientInfo.patientDetails();
         }
         else 
         {
