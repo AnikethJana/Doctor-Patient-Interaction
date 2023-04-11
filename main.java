@@ -5,7 +5,7 @@ class main {
         int num = 2;
         Scanner scn = new Scanner(System.in);
         while (num < 3) {
-        System.out.println("Would you Like to \n 1. Login \n 2. Exit ? ");
+        System.out.println("Would you Like to \n 1. Login \n 2. Exit ");
         
         int p = scn.nextInt();
         switch (p) {
@@ -19,10 +19,8 @@ class main {
             num = 4;
             break;
         }
-        }
+    }
         scn.close();
-        
-        
         
     }
 }
