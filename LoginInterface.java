@@ -43,8 +43,6 @@ class LoginInterface
         {
             System.out.println("user not found");
         }
-        sc.close(); 
-
         return UserID;
         
     }
