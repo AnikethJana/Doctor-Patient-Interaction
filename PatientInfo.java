@@ -3,11 +3,11 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class PatientInfo {
-    
-    public Map<String, String> patientDetails() {
+    static Map<String, String> hs = new HashMap<>();
+    public static void  patientDetails() {
         
         Scanner sc = new Scanner(System.in);
-        Map<String, String> hs = new HashMap<>();
+        
 
         System.out.println("Welcome to Clinic ");
         System.out.println("Kindly Fill the Details to fix an Appointment");
@@ -54,7 +54,7 @@ public class PatientInfo {
         catch (Exception e) {
             System.out.println("error in vscode" );
         }
-        return hs;
+        
     }
 }
 
