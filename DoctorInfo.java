@@ -1,14 +1,14 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class DoctorInfo {
-    public void doctorInfo (Map<String, String> patientDetails)
+    public void doctorInfo (Map<String, String> hs)
     { 
-        Map<String, String> hs = new HashMap<>();
-        System.out.println("Appointment data:");
-        for (String key : hs.keySet()) {
-            String value = hs.get(key);
-            System.out.println(key + ": " + value);
+        System.out.println("\n Appointment Data :");
+        // output for doc
+        Set es = hs.entrySet();
+        Iterator itr = es.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
         }
     }
 }
