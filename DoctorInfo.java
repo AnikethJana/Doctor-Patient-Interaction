@@ -5,10 +5,9 @@ public class DoctorInfo {
     { 
         System.out.println("\n Appointment Data :");
         // output for doc
-        Set es = hs.entrySet();
-        Iterator itr = es.iterator();
-        while (itr.hasNext()) {
-            System.out.println(itr.next());
+        for (String key : hs.keySet()) {
+            String value = hs.get(key);
+            System.out.println(key + " : " + value);
         }
     }
 }
