@@ -49,10 +49,6 @@ public class PatientInfo {
         hs.put("accessibility", accessibility);
         System.out.println("");
 
-        sc.close();
-
-        
-
         }
         
         catch (Exception e) {
