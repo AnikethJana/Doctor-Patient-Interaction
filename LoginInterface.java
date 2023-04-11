@@ -10,7 +10,7 @@ class LoginInterface
         String UserID = sc.nextLine();
         
         
-        System.out.println("Enter your Password: ");
+        System.out.print("Enter your Password: ");
         String Pass = sc.nextLine();
         //login Interface for Doctor
         if (UserID.equals("DOC001")) {
